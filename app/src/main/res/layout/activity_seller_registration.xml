@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sellers.SellerRegistration">
+
+
+    <ImageView
+        android:id="@+id/seller_img"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:contentDescription="@string/seller_information"
+        android:src="@drawable/seller"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/seller_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seller_registration_form"
+        android:gravity="center"
+        android:layout_below="@+id/seller_img"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="2dp"
+        android:textColor="@android:color/holo_blue_dark"
+        />
+    <EditText
+        android:id="@+id/seller_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_title"
+        android:hint="@string/rfre"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        android:autofillHints="@string/name"
+        android:layout_marginTop="5dp"/>
+
+
+    <EditText
+        android:id="@+id/seller_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_name"
+        android:hint="@string/phone_number"
+        android:inputType="number"
+        android:textSize="16sp"
+        android:autofillHints="@string/name"
+        android:layout_marginTop="5dp"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/seller_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_phone"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:autofillHints="@string/name"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/seller_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_email"
+        android:hint="@string/password"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        android:autofillHints="@string/name"
+        android:layout_marginTop="5dp"
+        tools:ignore="TextFields" />
+    <EditText
+        android:id="@+id/seller_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/seller_password"
+        android:hint="@string/address"
+        android:inputType="textMultiLine"
+        android:textSize="16sp"
+        android:autofillHints="@string/name"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/seller_register_bttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/background_light"
+        android:layout_below="@id/seller_address"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/seller_already_have_bttn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:text="@string/already_have_an_account_login"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+</RelativeLayout>

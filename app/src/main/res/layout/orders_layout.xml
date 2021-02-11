@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/orders_username"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/urname"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/orders_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_number"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/order_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_price"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/orders_phone_number"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/order_address_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/address_city"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/order_product_price"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <TextView
+            android:id="@+id/order_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date_time"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_below="@+id/order_address_city"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+            />
+        <Button
+            android:id="@+id/order_show_all_products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:background="@android:color/white"
+            android:text="@string/show_this_order_products"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_below="@+id/order_date_time"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

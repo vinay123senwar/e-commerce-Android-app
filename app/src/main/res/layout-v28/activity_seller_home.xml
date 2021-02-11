@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sellers.SellerHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/seller_relative"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:outlineAmbientShadowColor="@android:color/black">
+
+        <TextView
+            android:id="@+id/seller_home_home_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selelr"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:id="@+id/seller_home_add_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/asd"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp" />
+        <TextView
+            android:id="@+id/seller_home_logout_bttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jd"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:layout_marginRight="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="30dp"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout><RelativeLayout
+    android:id="@+id/rl21"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_alignParentTop="true"
+    tools:ignore="UselessParent">
+    <TextView
+        android:id="@+id/new_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/new_orders"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_products_unapprove_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/seller_relative"
+        android:layout_below="@+id/rl21"/>
+
+</RelativeLayout>

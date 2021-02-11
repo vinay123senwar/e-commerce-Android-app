@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/cart_item_product_name"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/roduct_name"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/cart_item_product_quantity"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/roduct_quantity"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textAlignment="viewEnd"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/cart_item_product_price"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/prduct_price"
+            android:layout_centerHorizontal="true"
+            android:textSize="14sp"
+            android:layout_below="@+id/cart_item_product_name"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="7dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
